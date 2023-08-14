@@ -1,4 +1,5 @@
 import { Request, Response, Router } from 'express';
+const {db } = require('../firebase');
 
 const api_v1 = Router();
 
