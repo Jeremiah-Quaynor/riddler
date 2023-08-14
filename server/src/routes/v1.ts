@@ -19,8 +19,6 @@ api_v1.get('/riddles', async (req: Request, res: Response) => {
       });
     });
 
-    console.log(riddles); // Log the retrieved riddles for debugging purposes
-
     res.send({ riddles: riddles });
   } catch (error) {
     console.error('Error fetching riddles:', error);
